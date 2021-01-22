@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+
+    <!-- ===== CSS ===== -->
+    <link rel="stylesheet" href="style.css">
+
+
+    <!-- ===== BOX ICONS ===== -->
+    <script src="https://kit.fontawesome.com/0535feebc1.js" crossorigin="anonymous"></script>
+
+    <title>Responsive Login Form Sign In Sign Up</title>
+</head>
+
+<body>
+    <br>
+    <br>
+    <h1 style="color: white;">Welcome To LetsChat</h1>
+    <div class="login">
+        <div class="login__content">
+            <div class="login__img">
+
+                <img src="img-login.svg" alt="">
+            </div>
+
+            <div class="login__forms">
+
+
+                <div class="login__create" id="login-up">
+                  <p id="greeting_para"></p>
+
+                    <h1 class="login__title">Create Room</h1>
+
+                    <div class="login__box">
+
+                        <input type="text" placeholder="Room Name" class="login__input" id="makeroom_input">
+                    </div>
+
+
+                    <button class="login__button" id="MakeRoom" onclick="addRoom()">Make Room</button>
+
+                    <button class="login__button" id="LogOut">Log Out</button>
+
+                    <button class="login__button" id="reDirect">Redirect To RoomName</button>
+
+                    <br>
+                    <br>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+
+    <script src="makeroom.js"></script>
+
+</body>

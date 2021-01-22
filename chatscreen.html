@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+
+
+
+  <!-- ===== CSS ===== -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="chatscreen.css">
+
+
+
+
+
+  <title>Main Screen</title>
+</head>
+
+<body>
+  <audio id="myAudio">
+    <source src="Pop.wav" type="audio/wav">
+  </audio>
+  <div class="container">
+    <div class="header">
+      <h1 id="placeOfROom"></h1>
+
+    </div>
+    <div class="body" id="output">
+
+
+    </div>
+    <div class="footer">
+      <div class="form">
+        <input type="text" name="" id="MeessagePlace">
+        <button onclick="send()">Send</button>
+      </div>
+
+
+    </div>
+  </div>
+  <script src="chatscreen.js"></script>
+</body>
